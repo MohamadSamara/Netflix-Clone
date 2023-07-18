@@ -9,10 +9,12 @@ function Home() {
         const url = process.env.REACT_APP_SERVER_URL
         const response = await fetch(`${url}/trending`);
         const trendingMovies = await response.json();
-        setData(trendingMovies);
+        const newTrendingMovies = trendingMovies.map((item) => (
+            {
+             ...item, comment: "static comment"
+             }))
+        setData(newTrendingMovies);
     }
-        // getTrending();
-
     useEffect(() => {
         getTrending();
     }, []);

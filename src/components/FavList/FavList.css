@@ -1,0 +1,26 @@
+.main-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .main-card {
+    width: 18rem;
+    margin: 20px 35px;
+  }
+  
+  
+  .custom-card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+ 
+  
+  .custom-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  img{
+    height: 300px;
+  }
