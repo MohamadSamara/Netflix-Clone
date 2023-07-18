@@ -13,11 +13,12 @@ function Movie({ data }) {
         <div className="movie-div">
             < Card className="card-div" >
                 <Card.Body>
+                    <Card.Img className="card-img" variant="top" src={`https://image.tmdb.org/t/p/original/${data.poster_path}`} />
                     <Card.Title>{data.title}</Card.Title>
                     <Button variant="primary" onClick={handleShow}>Add To Favorite</Button>
                 </Card.Body>
             </Card>
-            <ModalMovie data = {data} handleClose = {handleClose} handleShow = {handleShow} show = {show} />
+            <ModalMovie data={data} handleClose={handleClose} handleShow={handleShow} show={show} />
         </div>
     );
 }
